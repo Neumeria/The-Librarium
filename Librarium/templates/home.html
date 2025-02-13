@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Librarium</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='home.css') }}">
+  <link rel="icon" href="{{ url_for('static', filename='Assets/Images/icon.jpg') }}">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+</head>
+<body>
+  <header class="header">
+    <a href="{{ url_for('home') }}" title="Goes to Home Page">
+      <img src="{{ url_for('static', filename='Assets/Images/homeLogo.png') }}" class="homeLogo" alt="Home Logo">
+    </a>
+    <nav class="navbar">
+      <a href="{{ url_for('profile') }}"><i class="fas fa-user-circle"></i>Profile</a>
+      <a href="{{ url_for('logout') }}"><i class="fas fa-sign-out-alt"></i>Logout</a>
+    </nav>
+  </header>
+  <div class="main">
+    <div class="left">
+      <div class="inner">
+        <a href="{{ url_for('static', filename='war40k.html') }}" title="Click to view tips and information on this game.">
+          <img src="{{ url_for('static', filename='Assets/Images/CRcover.jpg') }}" class="CRcover" alt="CRcover">
+        </a>
+      </div>
+    </div>
+    <div class="right">
+      <div class="inner">
+        <a href="{{ url_for('static', filename='Lionheart.html') }}" title="Click to view tips and information on this game.">
+          <img src="{{ url_for('static', filename='Assets/Images/LHcover.jpg') }}" class="LHcover" alt="LHcover">
+        </a>
+      </div>
+    </div>
+  </div>
+  <footer class="footer">
+    <a href="mailto:chaoschampion6@gmail.com" target="_blank">
+      <img src="{{ url_for('static', filename='Assets/Images/gmailLogo.png') }}" class="gmailLogo" alt="gmailLogo" width="35px" height="35px">
+    </a>
+    <a href="https://github.com/Neumeria" target="_blank" title="Goes to my github page.">
+      <img src="{{ url_for('static', filename='Assets/Images/githubLogo.png') }}" class="githubLogo" alt="githubLogo" width="35px" height="35px">
+    </a>
+    <script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script>
+    <script type='text/javascript'>kofiwidget2.init('Buy me a coffee', '#00000000', 'Q5Q2V3G8S');kofiwidget2.draw();</script>
+    <small style="font-style: italic;">
+      <p><b>Website author: Neumeria</b></p>
+      <p>&copy; copyright reserved.</p>
+    </small>
+  </footer>
+</body>
+</html>

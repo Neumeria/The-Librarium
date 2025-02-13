@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login-SignUp</title>
+  <link rel="stylesheet" href="PageLS.css">
+  <link rel="icon" type="jpg" href="Assets/Images/icon.jpg">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+  <header class="header">
+    <a href="index.html" title="Goes to Home Page">
+      <img src="Assets/Images/homeLogo.png" class="homeLogo" alt="Home Logo">
+    </a>
+  </header>
+  <div class="main">
+    <input type="checkbox" id="checkbox" aria-hidden="true">
+    <div class="signup">
+      <form method="post">
+        <label for="checkbox" aria-hidden="true">Sign up</label>
+        <input type="text" id="username" name="txt" placeholder="Username" required>
+        <input type="email" id="email" name="email" placeholder="E-mail ID" required>
+        <input type="password" id="password" name="password" placeholder="Password" required>
+        <button type="submit" onclick="signup()">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>Sign up</button>
+      </form>
+    </div>
+    <div class="login">
+      <form method="post">
+        <label for="checkbox" aria-hidden="true">Login</label>
+        <input type="email" id="email2" name="email" placeholder="E-mail ID" required>
+        <input type="password" id="password2" name="password" placeholder="Password" required>
+        <button type="submit" onclick="login()">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>Login</button>
+      </form>
+    </div>
+  </div>
+  <script src="PageLS.js"></script>
+</body>
+</html>

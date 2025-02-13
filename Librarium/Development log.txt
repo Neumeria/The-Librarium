@@ -1,0 +1,106 @@
+Day 1:
+Created and designed a SignUp/Login Page.
+Added a website icon.
+
+Day 2:
+Changed background of the SignUp/Login Page.
+Made changes and updated the style of the SignUp/Login Page to better suit the new background.
+Login button now has it's own stylizations.
+Removed/Optimized some repeat and/or otherwise unnecessary code.
+Gathered Images for background slideshow for "war40k" page.
+Created a slideshow for background images for "war40k" page.
+
+Day 3:
+Replaced two lower quality background images with two higher quality ones.
+Made minor adjustments to the transparency of the SignUp/Login Page.
+Added written material to war40k page.
+Added Chaos Rising logo to war40k page.
+Chaos Rising logo now has hyperlink setup to it's Steam Store page.
+Added scroll-to-Top button to war40k page. (Used JQuery for better browser support and animation quality.)
+scroll-to-Top button now fades in and out. (Fade effect could be better, need to work on this.)
+
+Day 4:
+scroll-to-Top button fade quality is now significantly better.
+scroll-to-Top button now fades in and out depending on Y-axis scroll amount.
+SignUp/Login and war40k pages' contents now has a fade-in effect on page load.
+Added a navigation bar to SignUp/Login and war40k pages.
+
+Day 5:
+Took an unplanned break today. Will make up for it.
+
+Day 6:
+Created new "Lionheart" page.
+Gathered Images for background slideshow for "Lionheart" page.
+Created a slideshow for background images for "Lionheart" page.
+Added written material to Lionheart page.
+Added Lionheart logo to Lionheart page.
+Lionheart logo now has hyperlink setup to it's Steam Store page.
+Added high-quality fading scroll-to-Top button to Lionheart page.
+
+Day 7:
+Removed one overly high quality background image which caused some framerate issues when loading.
+Added two new background images.
+Created home page.
+Added background image and navigation bar to home page.
+Added war40k cover image that is hyperlinked to the war40k page.
+Added Lionheart cover image that is hyperlinked to the Lionheart page.
+Cover images scale up in size slightly when hovered over to give off a "being highlighted" effect.
+Cover images have their own glow effect when hovered over.
+
+Day 8:
+Did some research on backend-database connectivity.
+
+Day 9:
+Further research on backend-database connectivity.
+Installed MsSQL extension on VS Code.
+Encounterd some errors while creating a database profile. Need to look into this.
+
+Day 10:
+Errors are proving to be very persistent. (Connection refused / Connection timed out.)
+
+Day 11:
+Will either fix the error-issue today or switch to a different extension.
+Switching to different extension solved nothing, errors still persist. Something else is causing the error.
+Decided to install MySQL directly from it's website rather than use a VS Code extension. No errors caused this time.
+Connection to database server successfully created.
+
+Day 12:
+Household work.
+
+Day 13:
+All pages except Login/SignUp page, now has a footer with links to my email, github and ko-fi pages.
+Created database and "users" table.
+Added "NOT NULL" and "UNIQUE" keywords to columns in "users" table where required.
+Added "CURRENT_DATE()" as default to registration date of user for max efficiency.
+Added "PRIMARY KEY" and "AUTO_INCREMENT" to user id.
+
+Day 14:
+Learning about JSON, AJAX and Python connectivity with JavaScript.
+Installed "Flask" Python module.
+
+Day 15:
+Created fading-in-out appropriate messages for signup and/or login.
+Learning about running JavaScript functions through Python.
+Installed "js2py" Python module.
+Former procedure to implement a login-signup system ended in failure. Need to think of another way.
+
+Day 16:
+Learned some new things today but still couldn't get the login-signup system to work.
+Going to try and implement the login-signup system on a smaller project.
+Login-signup system works on the smaller project, will try to implement this on main project.
+
+Day 17:
+!!! Major overhaul to folder structure and the files within !!!
+Successfully created and deployed Flask server.
+PageLS page is now index page. Index page is now home page.
+Login button in home page removed with working logout and profile buttons.
+Login and Sign-Up features now function properly.
+Signing-up and Logging-in is now compulsory to view the website's contents. (I didn't want this but for now I have no choice. A future update might remove this and make it optional again. *fingers crossed*)
+Profile page created and fully-functional. Future updates will allow user to update their info from this page.
+"The Librarium" is now officially fully operational.
+Background image slideshow is broken however for some reason and doesn't work anymore. Need to look into this.
+
+Day 18:
+Couldn't find a proper fix for the background image slideshow, it would seem flask doesn't have support for background image slideshow. (I hope I'm wrong about this.)
+For now, I came up with a temporary solution by moving the "war40k" and "Lionheart" html files over to static folder and make according changes to support it.
+One major change was that, I had to remove the header and navbar, which means you cannot access the profile, home or logout buttons anymore. If you want to go back to home page, you will need to use the back button in your browser.

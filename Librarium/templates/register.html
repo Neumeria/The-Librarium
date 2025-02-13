@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login-SignUp</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+  <link rel="icon" type="jpg" href="{{ url_for('static', filename='Assets/Images/icon.jpg') }}">
+</head>
+<body>
+  <header class="header">
+    <a href="{{ url_for('home') }}" title="Goes to Home Page">
+      <img src="{{ url_for('static', filename='Assets/Images/homeLogo.png') }}" class="homeLogo" alt="Home Logo">
+    </a>
+  </header>
+  <div class="main">
+    <input type="checkbox" id="checkbox" aria-hidden="true">
+    <div class="signup">
+      <form action="{{ url_for('register') }}" method="post">
+        <label for="checkbox" aria-hidden="true">Sign up</label>
+        <input type="text" id="username" name="username" placeholder="Username" required>
+        <input type="email" id="email" name="email" placeholder="E-mail ID" required>
+        <input type="password" id="password" name="password" placeholder="Password" required>
+        <button type="submit" onclick="signup()">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>Sign up</button>
+      </form>
+    </div>
+    <div class="login">
+      <form action="{{ url_for('login') }}" method="post">
+        <label for="checkbox" aria-hidden="true">Login</label>
+        <input type="email" id="email" name="email" placeholder="E-mail ID" required>
+        <input type="password" id="password" name="password" placeholder="Password" required>
+        <button type="submit" onclick="login()">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>Login</button>
+      </form>
+    </div>
+  </div>
+  <div class="msg">{{ msg }}</div>
+  <script src="{{ url_for('static', filename='index.js') }}"></script>
+</body>
+</html>
