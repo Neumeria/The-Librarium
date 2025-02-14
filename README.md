@@ -2,7 +2,7 @@ Main Project is under "Librarium folder"\
 Files outside of that are just a preview of what the website used to be before the database-changes.\
 The website looks the same mostly, so if you just want to have a look at the website and don't care about the database stuff and other functionality such as:\
 profile-viewing, logging-in, logging-out, signing-up, etc...\
-You can do so by simply visiting the github deployed page here: https://neumeria.github.io/Ossuary/ \
+You can do so by simply visiting the github deployed page here: https://neumeria.github.io/The-Librarium/ \
 \
 "The Librarium" is complete.\
 Some latest changes forced some bugs to surface, all of which have been dealt with.\
